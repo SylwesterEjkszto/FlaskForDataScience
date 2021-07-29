@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}View all Users{% endblock %}
+{% block content %}
+<form action="#" method="post">
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"></span>
+						</div>
+						<input type="text" class="form-control" placeholder="Movie Title" name="movie_title">
+						<input name ="Submit" type="submit" value="Submit" class="btn float-right login_btn">
+
+					</div>
+</form>
+        <p class="view_content">{{result}}</p>
+{% endblock %}

@@ -10,14 +10,27 @@
         {% endif %}
     {% endwith %}
 <form action="#" method="post">
-    <p>Name:</p>
-    <p><input type="text" name="nm"/></p>
-    <p>Email:</p>
-    <p><input type="email" name="email_input"/></p>
-    <p class="something">Password:</p>
-    <p><input type="text" name="password_input"/></p>
-    <p><input type="submit" name ="login" value="login"/></p>
-    <p><input type="submit" name ="login" value="register"/></p>
+    <div class="input-group form-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-user"></i></span>
+        </div>
+            <input type="text" class="form-control" placeholder="username" name="nm">
+    </div>
+    <div class="input-group form-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-key"></i></span>
+        </div>
+            <input type="password" class="form-control" placeholder="password" name="password_input">
+    </div>
+    <div class="input-group form-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-key"></i></span>
+        </div>
+            <input type="email" class="form-control" placeholder="email" name="email_input">
+    </div>
+    <div class="form-group">
+        <input name ="login" type="submit" value="login" class="btn float-right login_btn">
+        <input name ="login" type="submit" value="register" class="btn float-right login_btn">
+    </div>
 </form>
-
 {% endblock %}
